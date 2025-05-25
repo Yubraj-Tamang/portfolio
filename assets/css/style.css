@@ -726,6 +726,9 @@
                 padding: 10px;
                 font-size: 0.9rem;
             }
+            #page6 > .copyright{
+                margin-top: 130px;
+            }
         }
 
         /* back button */
@@ -740,4 +743,10 @@
     transition: background 0.3s;
     border: none;
     cursor: pointer;
+}
+
+/* footer */
+
+.copyright{
+    margin-top: 35vh;
 }
