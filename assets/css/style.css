@@ -726,7 +726,8 @@
                 padding: 10px;
                 font-size: 0.9rem;
             }
-            #page6 > .copyright{
+            /* footer */
+            #page6 > .footer{
                 margin-top: 130px;
             }
         }
@@ -747,6 +748,6 @@
 
 /* footer */
 
-.copyright{
+.footer{
     margin-top: 35vh;
 }
