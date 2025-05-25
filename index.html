@@ -6,6 +6,17 @@
     <title>Yubraj Tamang</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- email -->
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "FN4XDb23Wd64RjYz_",
+      });
+   })();
+</script>
 </head>
 <body>
     <!-- Landing page -->
@@ -127,14 +138,15 @@
         </div>
 
         <div class="compact-contact-form">
-            <form class="contact-form" action="your_server_endpoint_for_form_submission" method="POST">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                 <input type="hidden" name="access_key" value="6420a30e-1f9d-41a0-9d9f-e0e01bad02d0"> 
                 <div class="form-row">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
                 <input type="text" id="subject" name="subject" placeholder="Subject">
                 <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-                <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                <button type="submit" onclick="sendMail()" ><i class="fas fa-paper-plane"></i> Send Message</button>
             </form>
         </div>
 
