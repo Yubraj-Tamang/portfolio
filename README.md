@@ -31,7 +31,6 @@ My technical proficiencies include:
 * **Machine Learning**: Scikit-learn, TensorFlow, PyTorch
 * **Data Visualization**: Matplotlib, Seaborn, Plotly
 * **Big Data**: Spark, Hadoop (distributed computing)
-* **MLOps**: Model deployment, monitoring
 * **Cloud Computing**: AWS, Google Cloud, Azure
 
 ---
