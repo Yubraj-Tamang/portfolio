@@ -727,10 +727,6 @@
                 padding: 10px;
                 font-size: 0.9rem;
             }
-            /* footer */
-            #page6 > footer{
-                margin-top: 130px;
-            }
         }
 
         /* back button */
@@ -750,5 +746,5 @@
 /* footer */
 
 footer{
-    margin-top: 35vh;
+    margin-top: 40vh;
 }
