@@ -18,6 +18,7 @@
             overflow-x: hidden;
             /* perspective: 1500px; */
             /* height: 100vh; */
+     
           
            margin: 0;
           padding: 0;
@@ -727,7 +728,7 @@
                 font-size: 0.9rem;
             }
             /* footer */
-            #page6 > .footer{
+            #page6 > footer{
                 margin-top: 130px;
             }
         }
@@ -748,6 +749,6 @@
 
 /* footer */
 
-.footer{
+footer{
     margin-top: 35vh;
 }
