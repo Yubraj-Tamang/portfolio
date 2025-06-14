@@ -130,7 +130,8 @@
             padding: 30px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             transform-origin: left center;
-            transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+            /* transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1); */
+             transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1); /* Changed from 1s to 0.5s */
             backface-visibility: hidden;
             overflow-y: auto;
             border-radius: 5px;
@@ -138,10 +139,14 @@
         }
 
         /* Realistic page curl effect */
-        .page.turning {
+        /* .page.turning {
             box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-        }
+        } */
+         .page.turning {
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); /* Changed from 0.7s to 0.4s */
+}
 
         .page-cover {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
