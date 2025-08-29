@@ -269,3 +269,19 @@ function sendMail() {
             alert('Failed to send message. Please try again later.'); // User feedback on error
         });
 }
+
+// When index.html loads, check if there's a hash like #page4
+window.addEventListener("load", function () {
+  const hash = window.location.hash;
+
+  if (hash.startsWith("#page")) {
+    const target = document.querySelector(hash);
+    if (target) {
+      // Remove 'active' from all pages
+      document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+
+      // Add 'active' only to the target page
+      target.classList.add("active");
+    }
+  }
+});
