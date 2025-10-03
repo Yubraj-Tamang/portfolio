@@ -3,364 +3,377 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yubraj Tamang</title>
+    <title>Yubraj Tamang | Data Science & ML Engineer</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <!-- <link rel="shortcut icon" href="./assets/icons/letter-y.png" type="image/x-icon"> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- email -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "FN4XDb23Wd64RjYz_",
-        });
-      })();
-    </script>
   </head>
   <body>
-    <!-- Landing page -->
-    <div class="landing-page" id="landingPage">
-      <h1>Yubraj Tamang</h1>
-      <h2>Welcome To My Portfolio Website</h2>
-      <a href="#" class="enter-btn" id="enterBtn">Enter Portfolio</a>
-    </div>
-
-    <div class="book-container" id="bookContainer">
-      <div class="book" id="book">
-        <!-- page 1 home page -->
-        <div class="page page-cover" id="page1">
-          <div class="cover-image">
-            <i class="fa-solid fa-circle-user"></i>
+    <header>
+      <nav class="container">
+        <div class="logo">&lt;YT /&gt;</div>
+        <button class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-center" id="navCenter">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch">
+              <input type="checkbox" id="themeToggle" />
+              <span class="slider">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+              </span>
+            </label>
           </div>
-          <h1>Yubraj Tamang</h1>
-          <h2>Machine Learning Engineer (ML) & Network Engineer</h2>
-          <p>Insights from Data.</p>
-          <div class="cover-actions">
-            <a href="./assets/cv/Yubraj Tamang.pdf" target="_blank" class="btn"
-              ><i class="fas fa-file-pdf"></i> Resume</a
-            >
-            <button class="btn" id="viewProjectsBtn">
-              <i class="fas fa-folder-open"></i> View Projects
-            </button>
-            <button class="btn" id="contactMeBtn">
-              <i class="fas fa-envelope"></i> Contact Me
-            </button>
-          </div>
-          <p style="margin-top: 30px">
-            <i class="fas fa-arrow-right"></i> Swipe or click next to begin
-          </p>
         </div>
+      </nav>
+    </header>
 
-        <!-- page 2 about page -->
-        <div class="page" id="page2">
-          <div class="page-content">
-            <h2>About Me</h2>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="pixel-icon-container">
+          <i class="fas fa-brain pixel-icon"></i>
+          <i class="fas fa-code pixel-icon"></i>
+          <i class="fas fa-chart-line pixel-icon"></i>
+        </div>
+        <h1>YUBRAJ TAMANG</h1>
+        <p class="subtitle">Data Science Student & ML Engineer</p>
+        <p>
+          Transforming data into intelligent solutions through machine learning
+          and advanced analytics. Passionate about building AI systems that
+          solve real-world problems.
+        </p>
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-folder-open"></i>View Projects
+          </a>
+          <a href="#" class="btn" onclick="downloadResume(event)">
+            <i class="fas fa-download"></i>Download Resume
+          </a>
+          <a href="#contact" class="btn">
+            <i class="fas fa-envelope"></i>Get In Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">// SKILLS & EXPERTISE</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>Data Science</h3>
             <p>
-              Proficient in Data Science and Networking, with a strong
-              foundation in Cybersecurity principles.
-            </p>
-            <p>
-              Hello! I'm Yubraj Tamang, As a Data Scientist, I specialize in
-              extracting insights through machine learning and statistical
-              analysis. My background also includes a solid understanding of
-              networking principles and basic cybersecurity, which I integrate
-              into my problem-solving approach.
-            </p>
-
-            <h3>Key Skills</h3>
-            <ul>
-              <li>
-                <b>Data Science & Machine Learning:</b> Proficient in data
-                manipulation, statistical analysis, and developing
-                supervised/unsupervised machine learning models (Linear/Logistic
-                Regression, K-Means, Decision Trees).
-              </li>
-              <li>
-                <b>Data Visualization:</b> Expertise in creating clear and
-                interactive data insights using Tableau, Matplotlib, and
-                Seaborn.
-              </li>
-              <li>
-                <b>Programming & Databases:</b> Strong command of Python for
-                data-centric tasks (Pandas, NumPy, Scikit-learn) and optimizing
-                SQL queries for data extraction and analysis (MySQL).
-              </li>
-              <li>
-                <b>Networking & Security:</b> Experienced in network design,
-                configuration, and troubleshooting (TCP/IP, Routing & Switching,
-                Subnetting). Foundational knowledge in network security,
-                utilizing tools like Nmap and Wireshark.
-              </li>
-              <li><b>Cloud Computing:</b> AWS, Google Cloud</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- page 3 education page -->
-        <div class="page" id="page3">
-          <div class="page-content">
-            <h2>Education</h2>
-
-            <div class="education-item">
-              <div class="education-date">2022 - Present</div>
-              <div class="education-institution">
-                Bachelor of Information Technology(BIT) – Lincoln University
-                College, NCMT College
-              </div>
-              <p>
-                The Bachelor of Information Technology (BIT) program in Nepal
-                prepares students for careers in software development, IT
-                management, data analysis, and system administration.
-              </p>
-            </div>
-
-            <div class="education-item">
-              <div class="education-date">2020 – 2022</div>
-              <div class="education-institution">
-                Plus Two (+2) - Ganesh Secondary School & Campus
-              </div>
-              <p>
-                +2 Management with Computer Science combines business studies
-                with basic IT skills. It leads to programs like BIT, BCA, or BBA
-                for tech or business careers.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- page 4 my project page -->
-        <div class="page" id="page4">
-          <div class="page-content">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-              <div class="project-item">
-                <img
-                  src="./assets/images/portfolio_website.png"
-                  alt="portfolio_website"
-                />
-                <div class="project-info">
-                  <h3>Portfolio Website</h3>
-                  <p>
-                    This repository contains the source code for Yubraj Tamang's
-                    personal portfolio website. The website showcases skills,
-                    education, projects, and contact information, serving as a
-                    comprehensive online resume for potential employers and
-                    collaborators.
-                  </p>
-                  <div class="project-links">
-                    <a
-                      href="https://github.com/Yubraj-Tamang/portfolio.git"
-                      target="_blank"
-                      class="btn"
-                      >Case Study <i class="fas fa-file-alt"></i
-                    ></a>
-                    <a
-                      href="https://github.com/Yubraj-Tamang/portfolio.git"
-                      target="_blank"
-                      class="btn"
-                      style="background: #6c757d"
-                      ><i class="fab fa-github"></i> GitHub</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="project-item">
-                <img
-                  src="./assets/images/barplot_eco.png"
-                  alt="Economic_dataset_EDA"
-                />
-                <div class="project-info">
-                  <h3>Economic Dataset EDA & Cleaning</h3>
-                  <p>
-                    This project involves exploratory data analysis (EDA) and
-                    data cleaning on an economic dataset. The aim is handling
-                    missing values, removing inconsistencies, and uncovering
-                    insights through statistical summaries and visualizations.
-                  </p>
-                  <div class="project-links">
-                    <a
-                      href="https://github.com/Yubraj-Tamang/economic_Dataset_EDA-_Cleaning.git"
-                      target="_blank"
-                      class="btn"
-                      >Source Code<i class="fas fa-external-link-alt"></i
-                    ></a>
-                    <a
-                      href="https://github.com/Yubraj-Tamang/economic_Dataset_EDA-_Cleaning.git"
-                      target="_blank"
-                      class="btn"
-                      style="background: #6c757d"
-                      ><i class="fab fa-github"></i> GitHub</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="project-item">
-                <img
-                  src="./assets/images/heamap_corr_car.png"
-                  alt="car_dataset_eda"
-                />
-                <div class="project-info">
-                  <h3>Car Dataset: Exploratory Data Analysis (EDA)</h3>
-                  <p>
-                    This project performs exploratory data analysis (EDA) on a
-                    car dataset. The goal is to understand the features, clean
-                    the data, identify patterns and insights, and prepare it for
-                    future machine learning or business intelligence tasks.
-                  </p>
-                  <div class="project-links">
-                    <a
-                      href="https://github.com/Yubraj-Tamang/car_dataset_explonary-_data_ansysis.git"
-                      target="_blank"
-                      class="btn"
-                      >Source Code <i class="fas fa-external-link-alt"></i
-                    ></a>
-                    <a
-                      href="https://github.com/Yubraj-Tamang/car_dataset_explonary-_data_ansysis.git"
-                      target="_blank"
-                      class="btn"
-                      style="background: #6c757d"
-                      ><i class="fab fa-github"></i> GitHub</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="all-projects-btn-container">
-              <a href="./assets/projects/project.html" class="btn"
-                ><i class="fas fa-th-list"></i> View All Projects</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- page 5 contact me page -->
-        <div class="page" id="page5">
-          <div class="page-content">
-            <h2>Contact Me</h2>
-            <p>
-              Reach out for collaborations, job opportunities, or to discuss
-              data science!
-            </p>
-
-            <div class="contact-info">
-              <p><i class="fas fa-envelope"></i> yt60015@gmail.com</p>
-              <p><i class="fas fa-phone"></i> +977 9767410777</p>
-              <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
-            </div>
-
-            <div class="compact-contact-form">
-              <form
-                class="contact-form"
-                action="https://api.web3forms.com/submit"
-                method="POST"
-              >
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="6420a30e-1f9d-41a0-9d9f-e0e01bad02d0"
-                />
-                <div class="form-row">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Subject"
-                />
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Your message here..."
-                  required
-                ></textarea>
-                <button type="submit" onclick="sendMail()">
-                  <i class="fas fa-paper-plane"></i> Send Message
-                </button>
-              </form>
-            </div>
-
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/yubraj-tamang/"
-                target="_blank"
-                aria-label="LinkedIn"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a
-                href="https://github.com/Yubraj-Tamang/"
-                target="_blank"
-                aria-label="GitHub"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://x.com/Cruz6T9"
-                target="_blank"
-                aria-label="Twitter"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                href="https://www.kaggle.com/yubraj00"
-                target="_blank"
-                aria-label="Kaggle"
-                ><i class="fab fa-kaggle"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- page 6 footer page -->
-
-        <div
-          class="page page-cover"
-          id="page6"
-          style="justify-content: flex-start; padding-top: 50px"
-        >
-          <h2 style="color: white">Thank You</h2>
-          <p>For viewing my portfolio</p>
-          <div style="margin-top: 30px">
-            <p>
-              <i class="fas fa-arrow-left"></i> Swipe or click prev to review
+              Statistical analysis, data visualization, exploratory data
+              analysis, and predictive modeling using Python and R.
             </p>
           </div>
-          <div style="margin-top: 30px">
-            <button class="btn-back" id="backToCoverBtn">
-              <i class="fas fa-home"></i> Back to Profile
-            </button>
+          <div class="skill-card">
+            <i class="fas fa-robot"></i>
+            <h3>Machine Learning</h3>
+            <p>
+              Supervised and unsupervised learning, deep learning, neural
+              networks, NLP, and computer vision applications.
+            </p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+            <p>
+              Python, R, SQL, JavaScript. Proficient in libraries like
+              TensorFlow, PyTorch, Scikit-learn, and Pandas.
+            </p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-cloud"></i>
+            <h3>MLOps & Deployment</h3>
+            <p>
+              Model deployment, Docker, CI/CD pipelines, cloud platforms (AWS,
+              GCP), and API development.
+            </p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Data Visualization</h3>
+            <p>
+              Creating insightful dashboards with Tableau, Power BI, Matplotlib,
+              Seaborn, and Plotly.
+            </p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Problem Solving</h3>
+            <p>
+              Analytical thinking, algorithm design, optimization techniques,
+              and innovative solution development.
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="navigation" id="navigation">
-      <button class="nav-btn" id="prevBtn" disabled>
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button class="nav-btn home-nav-btn" id="homeNavBtn">
-        <i class="fas fa-home"></i>
-      </button>
-      <button class="nav-btn" id="nextBtn">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-    </div>
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">// FEATURED PROJECTS</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <!-- Replace src with your project image URL -->
+              <!-- <img src="path/to/your/image.jpg" alt="Sentiment Analysis System"> -->
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="project-content">
+              <h3>Sentiment Analysis System</h3>
+              <p>
+                Built an NLP model to analyze customer sentiment from social
+                media data with 94% accuracy using BERT and transformers.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">BERT</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Flask</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-code"></i>Source</a
+                >
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-external-link-alt"></i>Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <!-- <img src="path/to/your/image.jpg" alt="Image Classification CNN"> -->
+              <i class="fas fa-image"></i>
+            </div>
+            <div class="project-content">
+              <h3>Image Classification CNN</h3>
+              <p>
+                Developed a convolutional neural network for multi-class image
+                classification achieving 96% validation accuracy.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">CNN</span>
+                <span class="tech-tag">OpenCV</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-code"></i>Source</a
+                >
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-external-link-alt"></i>Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <!-- <img src="path/to/your/image.jpg" alt="Predictive Analytics Dashboard"> -->
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-content">
+              <h3>Predictive Analytics Dashboard</h3>
+              <p>
+                Created an interactive dashboard for sales forecasting using
+                time series analysis and machine learning models.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">ARIMA</span>
+                <span class="tech-tag">Plotly</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-code"></i>Source</a
+                >
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-external-link-alt"></i>Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <!-- <img src="path/to/your/image.jpg" alt="Chatbot with LLM"> -->
+              <i class="fas fa-comments"></i>
+            </div>
+            <div class="project-content">
+              <h3>Chatbot with LLM</h3>
+              <p>
+                Implemented an intelligent chatbot using large language models
+                for customer support automation.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">React</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-code"></i>Source</a
+                >
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-external-link-alt"></i>Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <!-- <img src="path/to/your/image.jpg" alt="Anomaly Detection System"> -->
+              <i class="fas fa-fingerprint"></i>
+            </div>
+            <div class="project-content">
+              <h3>Anomaly Detection System</h3>
+              <p>
+                Developed an unsupervised learning system to detect fraudulent
+                transactions in real-time financial data.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Isolation Forest</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-code"></i>Source</a
+                >
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-external-link-alt"></i>Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <!-- <img src="path/to/your/image.jpg" alt="Student Performance Predictor"> -->
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="project-content">
+              <h3>Student Performance Predictor</h3>
+              <p>
+                Machine learning model to predict student performance and
+                identify at-risk students for early intervention.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Random Forest</span>
+                <span class="tech-tag">XGBoost</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Tableau</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-code"></i>Source</a
+                >
+                <a href="#" class="btn-small"
+                  ><i class="fas fa-external-link-alt"></i>Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-container">
+          <a href="./assets/projects/project.html" class="btn-view-all">
+            View All Projects<i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">// GET IN TOUCH</h2>
+        <div class="contact-content">
+          <div class="contact-intro">
+            <p>
+              I'm always excited to collaborate on innovative projects, discuss
+              data science opportunities, or connect with fellow ML enthusiasts.
+              Feel free to reach out!
+            </p>
+          </div>
+
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Project Collaboration"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Tell me about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">
+              <i class="fas fa-paper-plane"></i>Send Message
+            </button>
+          </form>
+
+          <div class="social-links">
+            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Kaggle"><i class="fab fa-kaggle"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Yubraj Tamang. All rights reserved</p>
+      </div>
+    </footer>
     <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
